@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,600;0,700;0,800;1,400;1,600;1,700;1,800&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Document</title>
+    <link rel="stylesheet" href="trending.css" />
+  </head>
+  <body>
+    <nav id="navbar">
+      <div class="logo">
+        <img
+          src="https://secure-media.hotstarext.com/web-assets/prod/images/brand-logos/disney-hotstar-logo-dark.svg"
+          alt="hotstar logo"
+        />
+      </div>
+      <div id="input">
+        <input
+          type="text"
+          placeholder="Search"
+          id="search"
+          oninput="debounce(main,1000)"
+        />
+      </div>
+    </nav>
+    <div id="resultBox">
+      <div class="container"></div>
+    </div>
+    <h2 id="trending">Latest & Trending</h2>
+    <div id="parent"></div>
+    
+  </body>
+</html>
+<script src="trending.js"></script>
